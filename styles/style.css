@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1600px;
+    height: 950px;
+    border-right: 1px solid;
+}
+
+.header {
+    background: yellow;
+    text-align: center;
+    border-bottom: 1px solid black;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+}
+
+.btn-settings {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    height: 30px;
+}
+.fields-settings {
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    display: none;
+    background: lightgrey;
+}
+.block-close-position {
+    position: relative;
+    width: 100%;
+    height: 5px;
+}
+.close-btn-position {
+    position: absolute;
+    top: 1px;
+    right: -30px;
+    line-height: 10px;
+}
+.ul-settings-style {
+    list-style: none;
+}
+
+main {
+    display: flex;
+    height: 850px;
+}
+
+.aside-heading,
+.tab-panel {
+    background: #19c8df;
+    color: white;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.tab-panel {
+    background: white;
+    /* border: 1px solid black; */
+    border-top: none;
+    box-sizing: border-box;
+    color: black;
+    display: flex;
+    align-items: center;
+    /*position: relative;*/
+}
+
+.add-tab-btn,
+.add-layer-btn {
+    width: 26px;
+    height: 26px;
+    background: #ececec;
+    line-height: 26px;
+    margin-left: 10px;
+    /*position: absolute;*/
+    /*left: 650px;*/
+}
+.add-tab-btn:hover,
+.add-layer-btn:hover {
+    background: darkgrey;
+    cursor: pointer;
+}
+
+.tab-btn {
+    width: auto;
+    padding: 0 10px;
+    height: 26px;
+    line-height: 26px;
+    background: #ececec;
+    margin-left: 10px;
+}
+.tab-btn:hover {
+    background: aqua;
+    cursor: pointer;
+}
+.tab-btn:focus {
+    background-color: #19c8df;
+}
+
+#canvasTabSection {
+    display: flex;
+    overflow-x: auto;
+    max-width: 1350px;
+    white-space: nowrap;
+}
+
+.left-panel {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid;
+}
+
+.li-panel ul,
+.layer-li-panel ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-panel li {
+    margin-top: 30px;
+}
+
+.li-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.li-panel ul li input:first-child {
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.btn {
+    padding: 12px;
+    background: #19c8df;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-focus {
+    background: #e5e5e5;
+    outline: none;
+    box-shadow: inset 0px 0px 15px #c1c1c1;
+}
+.layer-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+}
+.layer-li-panel ul {
+    max-height: 398px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.footer {
+    display: flex;
+    background: yellow;
+    border-top: 1px solid black;
+    height: 50px;
+    line-height: 50px;
+}
+
+footer div {
+    margin-left: 35px;
+}
+
+.canvas-wrapper {
+    border: 1px solid black;
+    border-top: none;
+    border-bottom : none;
+    box-sizing: border-box;
+    min-height: initial;
+    min-width: initial;
+    position: relative;
+}
+.canvas-tabs {
+    /* width: 1400px;
+    height: 790px; */
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    border-top: 1px solid;
+    display: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 120px;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {background-color: #19c8df; cursor: pointer}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .btn {background-color: #19c8df;}
+
+.dropdown-settings {
+    padding: 0 30px;
+}
+
+#layer1canvas1 {
+    background: lightyellow;
+}
+#layer1canvas2 {
+    background: darkseagreen;
+}
+#layer1canvas3 {
+    background: cadetblue;
+}
+.toggle-canvas {
+    display: none;
+}

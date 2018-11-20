@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <link rel='stylesheet' href='styles/style.css'>
+        
+    </head>
+    <body>
+
+    <div>
+        <header class="header">
+            <button class="btn-settings" id="btnSettings">Settings</button>
+            <div class="fields-settings" id="fieldsSettings">
+                <div class="dropdown dropdown-settings">
+                    <!--<ul class="ul-settings-style">-->
+                        <!--<li class="block-close-position">-->
+                            <!--<span class="close-btn-position">[x]</span>-->
+                        <!--</li>-->
+                        <!--<li>Settings</li>-->
+                        <!--<li>Theme-->
+                            <!--<ul class="ul-settings-style">-->
+                                <!--<li>Light</li>-->
+                                <!--<li>Dark</li>-->
+                            <!--</ul>-->
+                        <!--</li>-->
+                        <!--<li>Lang-->
+                            <!--<ul class="ul-settings-style">-->
+                                <!--<li>EN</li>-->
+                                <!--<li>RU</li>-->
+                            <!--</ul>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                    <div class="block-close-position">
+                        <span class="close-btn-position" id="closeSettings">[x]</span>
+                    </div>
+                    <p>Settings</p>
+                    <div class="dropdown">Theme
+                        <div class="">
+                            <a id="light">Light</a>
+                            <a id="light">Dark</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">Lang
+                        <div class="">
+                            <a id="en">EN</a>
+                            <a id="ru">RU</a>
+                        </div>
+                    </div>
+                    <!--<div>Theme</div>-->
+                    <!--<div>Lang</div>-->
+                </div>
+            </div>
+            <h1>Paint App</h1>
+        </header>
+        <main>
+            <aside class="left-panel">
+                <div class="aside-heading">Control Panel</div>
+                <div class="li-panel">
+                    <ul>
+                        <li><input type="text" placeholder="Enter color" id="changeColor"></li>
+                        <li><button id="btnPressed" class="btn">Pen</button></li>
+                        <li>
+                            <input id="changeSize" type="range" value="50">
+                            <span id="size"></span>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn">Figure</button>
+                                <div class="dropdown-content">
+                                        <a id="square">Square</a>
+                                        <a id="circle">Circle</a>
+                                        <a id="hexagon">Hexagon</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><button id="clear" class="btn">Clear</button></li>
+                    </ul>
+                </div>
+                <div class="layer-panel">
+                    <button id="addNewLayer" class="btn" style="margin-left: 50px; width: 100px">Add Layer</button>
+                    <div class="layer-li-panel">
+                        <ul id="newLiForLayer">
+                            <li><input type="checkbox" id="inputlayer1canvas1" name="chboxs" onclick="showHideCanvas(event)"><label for="">Layer1</label></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <article>
+                <section class="tab-panel">
+
+                    <div id="canvasTabSection">
+                        <div class="tab-btn" id="tab1" tabindex="0">Tab 1</div>
+                    </div>
+                    <div class="add-tab-btn" id="addNewTab">&#43;</div>
+                </section>
+                <div class='canvas-wrapper' id="canvas-wrapper">
+                    <div style="position: relative;" width= '1400px' height = '790px' id="canvasWrap1">
+                        <canvas id='layer1canvas1' width= '1400px' height = '790px' class="canvas-tabs" style="display: none;"></canvas>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <footer class="footer">
+            <div>COLOR
+                <span id="showColor" class="current-color" style="background: black;">: black</span>
+            </div>
+            <div>MOUSE X
+                <span id="mouseX"></span>
+            </div>
+            <div>MOUSE Y
+                <span id="mouseY"></span>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src ='script/script2.js'></script>
+    <script src ='script/addTab.js'></script>
+    <script src ='script/addLayer.js'></script>
+    </body>
+</html>

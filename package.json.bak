@@ -1,0 +1,26 @@
+{
+  "name": "hw-4-canvas-3figure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KovalovIE/Canvas-PaintApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KovalovIE/Canvas-PaintApp/issues"
+  },
+  "homepage": "https://github.com/KovalovIE/Canvas-PaintApp#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}
